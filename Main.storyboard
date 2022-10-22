@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LogInVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="LogInVC" id="BYZ-38-t0r" customClass="LogInVC" customModule="clr_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Fz7-UX-hSw">
+                                <rect key="frame" x="138" y="244.33333333333334" width="154" height="443.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="o3E-iT-qZo">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="109.33333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HQ-9h-5mL">
+                                                <rect key="frame" x="50.666666666666657" y="0.0" width="53" height="46"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="39"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBd-DA-kFv">
+                                                <rect key="frame" x="0.0" y="80.999999999999972" width="154" height="28.333333333333329"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rLq-Ik-E37">
+                                        <rect key="frame" x="24.999999999999993" y="169.33333333333334" width="104.33333333333331" height="73"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter pin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lne-h9-muR" userLabel="enterPin">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="34"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="incorrect pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qms-NO-mtB" userLabel="incorrectPin">
+                                                <rect key="frame" x="0.0" y="54" width="104.33333333333333" height="19"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90W-xZ-nIi">
+                                        <rect key="frame" x="20" y="302.33333333333326" width="114" height="37.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="new user?">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="gzN-Ly-Ujd" kind="presentation" identifier="S_Login_CreatePin" animates="NO" modalPresentationStyle="fullScreen" id="fIv-UC-Pdu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btz-IX-be3">
+                                        <rect key="frame" x="36.666666666666657" y="400" width="81" height="43.333333333333314"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="enter">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="enterButton_Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FIr-AP-o6p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fz7-UX-hSw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTA-WE-oCN"/>
+                            <constraint firstItem="Fz7-UX-hSw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lj5-5Q-uzo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterPin" destination="lne-h9-muR" id="Jwf-ke-hRc"/>
+                        <outlet property="incorrectPin" destination="qms-NO-mtB" id="dre-4q-ENG"/>
+                        <segue destination="usp-Dv-AsX" kind="presentation" identifier="S_LogIn_MainScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="GXP-y9-P0T"/>
+                        <segue destination="1Ih-fw-orO" kind="presentation" identifier="S_LogIn_EndScreen" modalPresentationStyle="automatic" id="ZAd-gL-9VA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="3"/>
+        </scene>
+        <!--EndScreenVC-->
+        <scene sceneID="Rb2-kI-oK3">
+            <objects>
+                <viewController title="EndScreenVC" id="1Ih-fw-orO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ACs-Sl-jjT">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="fka-c7-krx">
+                                <rect key="frame" x="65" y="188.66666666666663" width="300" height="486"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-Qn-ibS">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="47"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="40"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYd-kW-wfU">
+                                        <rect key="frame" x="0.0" y="99" width="300" height="387"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="pxB-sC-dlX"/>
+                                        </constraints>
+                                        <string key="text">you've reached the end of the program. you're free to delete this app now that you're nicotine-free. i'm proud of you, and from the bottom of my heart, i hope you never install this app again. have an amazing life!</string>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
+                                        <color key="textColor" name="Secondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cny-h8-y9X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fka-c7-krx" firstAttribute="centerX" secondItem="ACs-Sl-jjT" secondAttribute="centerX" id="ZUh-CS-tGV"/>
+                            <constraint firstItem="fka-c7-krx" firstAttribute="centerY" secondItem="ACs-Sl-jjT" secondAttribute="centerY" id="sPY-ej-W1W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yj-mM-8pQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.046511627906973" y="747.42489270386272"/>
+        </scene>
+        <!--MainScreenVC-->
+        <scene sceneID="dkk-3q-rce">
+            <objects>
+                <viewController title="MainScreenVC" id="usp-Dv-AsX" customClass="MainScreenVC" customModule="clr_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jre-TL-FA3">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wH4-gf-QZd" customClass="CircularProgressView" customModule="clr_" customModuleProvider="target">
+                                <rect key="frame" x="85" y="336" width="260" height="260"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="eiy-t8-FZU"/>
+                                    <constraint firstAttribute="width" constant="260" id="zA9-DI-bwl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PE-mJ-WLp">
+                                <rect key="frame" x="90" y="341" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="AB9-8J-Uaq"/>
+                                    <constraint firstAttribute="width" constant="250" id="mma-tf-Tle"/>
+                                </constraints>
+                                <color key="tintColor" name="Secondary"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="    " subtitle="puffs left" cornerStyle="capsule" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="70"/>
+                                    <fontDescription key="subtitleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="puffButton_Tapped:" destination="usp-Dv-AsX" eventType="touchUpInside" id="ASD-Xy-eHg"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="Lor-54-oxM">
+                                <rect key="frame" x="177" y="148.66666666666663" width="76" height="137.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmy-PZ-cyE">
+                                        <rect key="frame" x="11.666666666666657" y="0.0" width="53" height="46"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="39"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Le2-9D-IK2">
+                                        <rect key="frame" x="0.0" y="102" width="76" height="35.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrs-ze-MpC">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="35.333333333333336"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="30"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDH-M2-Ahh">
+                                                <rect key="frame" x="57.666666666666664" y="0.0" width="18.333333333333336" height="35.333333333333336"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="30"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap the circle to log a puff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yth-z0-vZ5">
+                                <rect key="frame" x="76.333333333333343" y="650.66666666666663" width="277.33333333333326" height="29.333333333333371"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="25"/>
+                                <color key="textColor" name="Secondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nC9-24-2wK">
+                                <rect key="frame" x="200.33333333333334" y="412" width="29.333333333333343" height="58.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="50"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onc-bp-wyu">
+                                <rect key="frame" x="154.33333333333334" y="805" width="121.33333333333334" height="37.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="change pin">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="yuG-uG-FCh" kind="presentation" id="cwb-Nc-4z4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IjM-8i-bGZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yth-z0-vZ5" firstAttribute="centerX" secondItem="jre-TL-FA3" secondAttribute="centerX" id="0qh-TK-I2J"/>
+                            <constraint firstItem="yth-z0-vZ5" firstAttribute="top" secondItem="nC9-24-2wK" secondAttribute="bottom" constant="180" id="1P3-Nb-Ecf"/>
+                            <constraint firstItem="Onc-bp-wyu" firstAttribute="centerX" secondItem="jre-TL-FA3" secondAttribute="centerX" id="2ea-RQ-z68"/>
+                            <constraint firstItem="wH4-gf-QZd" firstAttribute="top" secondItem="Lor-54-oxM" secondAttribute="bottom" constant="50" id="3k3-UF-znf"/>
+                            <constraint firstItem="wH4-gf-QZd" firstAttribute="centerX" secondItem="jre-TL-FA3" secondAttribute="centerX" id="5Rd-u1-HzI"/>
+                            <constraint firstItem="wH4-gf-QZd" firstAttribute="centerY" secondItem="jre-TL-FA3" secondAttribute="centerY" id="LI8-Mu-wJa"/>
+                            <constraint firstItem="Lor-54-oxM" firstAttribute="centerX" secondItem="jre-TL-FA3" secondAttribute="centerX" id="YTA-lj-y3W"/>
+                            <constraint firstItem="nC9-24-2wK" firstAttribute="centerX" secondItem="jre-TL-FA3" secondAttribute="centerX" id="fxY-at-GL8"/>
+                            <constraint firstItem="9PE-mJ-WLp" firstAttribute="centerY" secondItem="jre-TL-FA3" secondAttribute="centerY" id="iCr-lt-X4D"/>
+                            <constraint firstItem="nC9-24-2wK" firstAttribute="top" secondItem="Lor-54-oxM" secondAttribute="bottom" constant="126" id="lR8-yY-KBl"/>
+                            <constraint firstItem="Onc-bp-wyu" firstAttribute="top" secondItem="yth-z0-vZ5" secondAttribute="bottom" constant="125" id="wLU-jS-aOe"/>
+                            <constraint firstItem="9PE-mJ-WLp" firstAttribute="centerX" secondItem="jre-TL-FA3" secondAttribute="centerX" id="xOW-8s-ZRA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numDay" destination="zDH-M2-Ahh" id="vYU-uj-Br2"/>
+                        <outlet property="numPuffs" destination="nC9-24-2wK" id="eGP-ta-icN"/>
+                        <outlet property="progressBar" destination="wH4-gf-QZd" id="TL9-c9-9fd"/>
+                        <outlet property="puffButton" destination="9PE-mJ-WLp" id="CcK-9t-Rl1"/>
+                        <outlet property="statusMessage" destination="yth-z0-vZ5" id="PMe-Ng-KRv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALw-Bn-0v5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964.18604651162786" y="426.18025751072963"/>
+        </scene>
+        <!--VerifyPinVC-->
+        <scene sceneID="yCk-gL-cYu">
+            <objects>
+                <viewController title="VerifyPinVC" id="yuG-uG-FCh" customClass="VerifyPinVC" customModule="clr_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KJa-2e-bY5">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="nUC-7o-xW2">
+                                <rect key="frame" x="100.00000000000001" y="299.33333333333326" width="230.33333333333337" height="264.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="verify your current pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu4-OE-9bo">
+                                        <rect key="frame" x="0.0" y="0.0" width="230.33333333333334" height="28.333333333333332"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                        <color key="textColor" name="Secondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ogs-ul-xKs">
+                                        <rect key="frame" x="62.999999999999993" y="88.333333333333371" width="104.33333333333331" height="73"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter pin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2PP-Qb-xfH" userLabel="enterPin">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="34"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="incorrect pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik4-jH-p80" userLabel="incorrectPin">
+                                                <rect key="frame" x="0.0" y="54" width="104.33333333333333" height="19"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nur-HM-U6T">
+                                        <rect key="frame" x="74.666666666666657" y="221.33333333333331" width="81" height="43.333333333333314"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="enter">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="enterButton_Tapped:" destination="yuG-uG-FCh" eventType="touchUpInside" id="c2m-58-IQd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Us7-ZZ-7k9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nUC-7o-xW2" firstAttribute="centerX" secondItem="KJa-2e-bY5" secondAttribute="centerX" id="Wcw-F5-vwE"/>
+                            <constraint firstItem="nUC-7o-xW2" firstAttribute="centerY" secondItem="KJa-2e-bY5" secondAttribute="centerY" id="bN2-V9-CJk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="verifyPin" destination="2PP-Qb-xfH" id="2j7-VU-2CF"/>
+                        <outlet property="wrongPin" destination="Ik4-jH-p80" id="4wG-26-b2c"/>
+                        <segue destination="B9d-CE-ZxG" kind="presentation" identifier="S_VerifyPin_ChangePin" modalPresentationStyle="formSheet" modalTransitionStyle="coverVertical" id="tWe-oF-Ge8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7D7-8M-R9X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="426"/>
+        </scene>
+        <!--ChangePinVC-->
+        <scene sceneID="T7x-Kg-H3a">
+            <objects>
+                <viewController title="ChangePinVC" id="B9d-CE-ZxG" customClass="ChangePinVC" customModule="clr_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Muj-NU-b3S">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="MkA-YZ-KMz">
+                                <rect key="frame" x="134" y="272.33333333333326" width="162.33333333333337" height="318.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter a new pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCf-YS-MRz">
+                                        <rect key="frame" x="0.0" y="0.0" width="162.33333333333334" height="28.333333333333332"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                        <color key="textColor" name="Secondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cRA-dP-5PG">
+                                        <rect key="frame" x="0.0" y="88.333333333333371" width="162.33333333333334" height="127"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter new pin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KKi-2h-ebC" userLabel="newPin">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.33333333333334" height="34"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm pin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xra-GX-7tr" userLabel="confirmPin">
+                                                <rect key="frame" x="0.0" y="54" width="162.33333333333334" height="34"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pins must match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35a-Gy-2Zl" userLabel="pinsNotMatch">
+                                                <rect key="frame" x="0.0" y="108" width="162.33333333333334" height="19"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbW-hY-V7r" userLabel="change pin">
+                                        <rect key="frame" x="0.0" y="275.33333333333331" width="162.33333333333334" height="43.333333333333314"/>
+                                        <color key="tintColor" name="CornflowerBlue"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="change pin">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="changePinButton_Tapped:" destination="B9d-CE-ZxG" eventType="touchUpInside" id="Wsn-cp-6nq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qui-gj-1lY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MkA-YZ-KMz" firstAttribute="centerX" secondItem="Muj-NU-b3S" secondAttribute="centerX" id="If7-1K-Cvu"/>
+                            <constraint firstItem="MkA-YZ-KMz" firstAttribute="centerY" secondItem="Muj-NU-b3S" secondAttribute="centerY" id="h02-zM-gPp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPin" destination="xra-GX-7tr" id="ZMe-oz-oUx"/>
+                        <outlet property="newPin" destination="KKi-2h-ebC" id="NgU-gt-fcA"/>
+                        <outlet property="pinsMustMatch" destination="35a-Gy-2Zl" id="SPC-c2-DM5"/>
+                        <segue destination="usp-Dv-AsX" kind="presentation" identifier="S_changePin_MainScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="MTC-cJ-WsW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99p-Rx-c0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2742" y="426"/>
+        </scene>
+        <!--CreatePinVC-->
+        <scene sceneID="3gH-lG-m74">
+            <objects>
+                <viewController title="CreatePinVC" id="gzN-Ly-Ujd" customClass="CreatePinVC" customModule="clr_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y30-7a-eKu">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="cSN-Gz-ETD">
+                                <rect key="frame" x="82.666666666666686" y="217.33333333333334" width="265" height="497.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="foH-Qo-14b">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="109.33333333333333"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="igH-GY-fHP">
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="46"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XQ-MM-k8s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="202" height="46"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="39"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDI-HU-7mH">
+                                                        <rect key="frame" x="212" y="0.0" width="53" height="46"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="39"/>
+                                                        <color key="textColor" name="AccentColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="let's create a pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coh-rL-9t5">
+                                                <rect key="frame" x="46.333333333333329" y="80.999999999999972" width="172.33333333333337" height="28.333333333333329"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="onL-5M-svM">
+                                        <rect key="frame" x="68.666666666666686" y="169.33333333333334" width="127.33333333333331" height="127.00000000000003"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter pin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FGh-Ml-Vwt" userLabel="newPin">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.33333333333333" height="34"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm pin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZF-Dg-c9b" userLabel="confirmPin">
+                                                <rect key="frame" x="0.0" y="54" width="127.33333333333333" height="34"/>
+                                                <color key="textColor" name="Secondary"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pins must match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCB-QT-yST" userLabel="pinsNotMatch">
+                                                <rect key="frame" x="0.0" y="108" width="127.33333333333333" height="19"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZr-6s-ue0">
+                                        <rect key="frame" x="54" y="356.33333333333326" width="157" height="37.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="returning user?">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="S_CreatePin_LogIn" animates="NO" modalPresentationStyle="fullScreen" id="cec-po-hML"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ6-l5-ILD">
+                                        <rect key="frame" x="96.666666666666657" y="454" width="71.666666666666657" height="43.333333333333314"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="next">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButton_Tapped:" destination="gzN-Ly-Ujd" eventType="touchUpInside" id="QHh-8n-Jai"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q1O-qL-VLx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cSN-Gz-ETD" firstAttribute="centerY" secondItem="Y30-7a-eKu" secondAttribute="centerY" id="8Yk-lQ-7aF"/>
+                            <constraint firstItem="cSN-Gz-ETD" firstAttribute="centerX" secondItem="Y30-7a-eKu" secondAttribute="centerX" id="Gkc-cb-36L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPin" destination="UZF-Dg-c9b" id="PXF-Dy-KrA"/>
+                        <outlet property="newPin" destination="FGh-Ml-Vwt" id="GWz-0f-oSu"/>
+                        <outlet property="pinsNotMatch" destination="cCB-QT-yST" id="GFQ-qN-XVM"/>
+                        <segue destination="OMW-6X-Pe5" kind="presentation" identifier="S_CreatePin_UserDataInput" modalPresentationStyle="automatic" modalTransitionStyle="coverVertical" id="Mrs-AQ-mIt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oj4-YX-IAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964.61538461538453" y="-348.34123222748815"/>
+        </scene>
+        <!--UserDataInputVC-->
+        <scene sceneID="1Da-36-twM">
+            <objects>
+                <viewController title="UserDataInputVC" id="OMW-6X-Pe5" customClass="UserDataInputVC" customModule="clr_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vev-9b-tKe">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="733-Pt-wXm">
+                                <rect key="frame" x="62" y="126.66666666666669" width="306" height="609.66666666666652"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="t8B-5m-XYN">
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="507.33333333333331"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9Bg-dW-oah">
+                                                <rect key="frame" x="17.666666666666686" y="0.0" width="271" height="168.33333333333334"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I vape approximately" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCo-tT-729">
+                                                        <rect key="frame" x="0.0" y="0.0" width="271" height="35.333333333333336"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="b2n-Sq-gT7">
+                                                        <rect key="frame" x="10.666666666666671" y="50.333333333333321" width="249.66666666666663" height="67.666666666666686"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# of Juul pods / day" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPc-uD-dHC" userLabel="numPodsPerDay">
+                                                                <rect key="frame" x="0.0" y="0.0" width="249.66666666666666" height="39"/>
+                                                                <color key="textColor" name="CornflowerBlue"/>
+                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="must be greater than 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag0-1X-XCQ" userLabel="invalidNPD">
+                                                                <rect key="frame" x="24.333333333333343" y="44" width="201" height="23.666666666666671"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juul pods per day." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8N-j1-W5B">
+                                                        <rect key="frame" x="16.333333333333314" y="133" width="238" height="35.333333333333343"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-2n-858">
+                                                <rect key="frame" x="0.0" y="208.33333333333331" width="306" height="299"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to vape" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1H-wk-Qko">
+                                                        <rect key="frame" x="61.333333333333329" y="0.0" width="183.33333333333337" height="35.333333333333336"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DA7-7J-8NF">
+                                                        <rect key="frame" x="0.0" y="50.333333333333307" width="306" height="65.333333333333314"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="goal consumption rate" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tqw-NM-zJb" userLabel="goalConsRate">
+                                                                <rect key="frame" x="14.333333333333343" y="0.0" width="277.66666666666663" height="39"/>
+                                                                <color key="textColor" name="CornflowerBlue"/>
+                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="must be less than # of Juul pods / day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKT-Nd-VhT" userLabel="invalidGCR">
+                                                                <rect key="frame" x="0.0" y="44" width="306" height="21.333333333333329"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juul pods per day in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCV-p8-pfm">
+                                                        <rect key="frame" x="21.666666666666686" y="130.66666666666669" width="263" height="35.333333333333343"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1dm-vK-Le1">
+                                                        <rect key="frame" x="12.333333333333343" y="181" width="281.66666666666663" height="67.666666666666686"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# of days to reach goal" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Nk-3i-a5j" userLabel="goalNumDays">
+                                                                <rect key="frame" x="0.0" y="0.0" width="281.66666666666669" height="39"/>
+                                                                <color key="textColor" name="CornflowerBlue"/>
+                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="must be greater than 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVN-sG-ddT" userLabel="invalidGND">
+                                                                <rect key="frame" x="40.333333333333343" y="44" width="201" height="23.666666666666671"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2Z-H0-GJQ">
+                                                        <rect key="frame" x="118.33333333333334" y="263.66666666666663" width="69.333333333333343" height="35.333333333333314"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejd-67-FyZ">
+                                        <rect key="frame" x="117.33333333333334" y="566.33333333333337" width="71.666666666666657" height="43.333333333333371"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="next">
+                                            <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButton_Tapped:" destination="OMW-6X-Pe5" eventType="touchUpInside" id="XZq-Mq-54x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7M9-41-Do7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="733-Pt-wXm" firstAttribute="centerY" secondItem="vev-9b-tKe" secondAttribute="centerY" id="3p7-va-5nN"/>
+                            <constraint firstItem="733-Pt-wXm" firstAttribute="centerX" secondItem="vev-9b-tKe" secondAttribute="centerX" id="4Vn-l5-GTQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goalConsRate" destination="Tqw-NM-zJb" id="26N-Zk-pcT"/>
+                        <outlet property="goalNumDays" destination="1Nk-3i-a5j" id="gPa-iO-HZM"/>
+                        <outlet property="invalidGCR" destination="LKT-Nd-VhT" id="WMA-wa-imQ"/>
+                        <outlet property="invalidGND" destination="xVN-sG-ddT" id="Vlc-iy-McJ"/>
+                        <outlet property="invalidNPD" destination="ag0-1X-XCQ" id="bVg-hc-OQ9"/>
+                        <outlet property="numPodsPerDay" destination="SPc-uD-dHC" id="TNa-2o-ahq"/>
+                        <segue destination="usp-Dv-AsX" kind="presentation" identifier="S_UserDataInput_MainScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="OdR-cA-YCB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Sy-nF-gGx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833.8461538461538" y="-348.34123222748815"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GXP-y9-P0T"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.63137254901960782" green="0.79607843137254897" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CornflowerBlue">
+            <color red="0.63137254901960782" green="0.79607843137254897" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.43500000238418579" green="0.43500000238418579" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
